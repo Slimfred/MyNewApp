@@ -1,5 +1,10 @@
 # README
 
+This README is for my new app that I will be writing for my CareerFoundry Class.
+
+These changes are to practice commit and push.
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
