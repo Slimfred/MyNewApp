@@ -1,3 +1,23 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1,
+h2 {
+  text-align: center;
+  color: darkblue;
+}
+h1 {
+  font-family: Papyrus, Georgia, serif;
+}
+h2 {
+  font-family: Palatino, Georgia, serif;
+}
+h3,
+p {
+  font-family: Palatino, Georgia, serif;
+  color: darkgreen;
+}
+
+.lpimage {
+  margin: auto;
+}
