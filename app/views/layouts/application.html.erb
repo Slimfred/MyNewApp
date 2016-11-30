@@ -15,8 +15,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-fixed-top">
-      <ul class="nav-menu">
+    <nav class="navbar navbar-fixed-top nav-menu">
+      <ul class="nav-items">
         <li> Home </li>
         <li> About </li>
         <li> Contact </li>
@@ -25,8 +25,10 @@
 
     <%= yield %>
 
-    <footer>
-      &copy 2015 Bike Berlin
+    <footer class="navbar-fixed-bottom">
+      <div class="container-fluid sticky-footer">
+        <p> &copy 2015 Bike Bristol ~ 123 Filler St Bristol RI 02809 ~ 401-555-1212 <p>
+      </div> <!-- end container-fluid -->
     </footer>
   </body>
 </html>

@@ -1,6 +1,11 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 h1,
 h2 {
   text-align: center;
@@ -18,6 +23,14 @@ p {
   color: darkgreen;
 }
 
-.lpimage {
-  margin: auto;
+.sticky-footer p{
+  text-align: center;
+}
+
+.contact-page h3, p {
+  text-align: center;
+}
+
+.social-media-icons {
+  margin: 0 auto;
 }
