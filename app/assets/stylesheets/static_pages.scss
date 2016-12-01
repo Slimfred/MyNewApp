@@ -9,7 +9,7 @@ body {
 h1,
 h2 {
   text-align: center;
-  color: darkblue;
+  color: darkgreen;
 }
 h1 {
   font-family: Papyrus, Georgia, serif;
@@ -19,18 +19,19 @@ h2 {
 }
 h3,
 p {
+  text-align: center;
   font-family: Palatino, Georgia, serif;
-  color: darkgreen;
+  color: darkblue;
 }
 
 .sticky-footer p{
   text-align: center;
 }
 
-.contact-page h3, p {
-  text-align: center;
-}
-
 .social-media-icons {
   margin: 0 auto;
+}
+
+.cookie-border {
+  margin: auto;
 }
