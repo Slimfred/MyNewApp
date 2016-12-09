@@ -1,6 +1,13 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.products {
+  margin-left: 6%;
+}
+.prod-logo {
+  
+}
 .product-name {
   font-family: Papyrus, Georgia, serif;
   font-size: 2em;
@@ -9,16 +16,18 @@
 .product-desc {
   font-family: Palatino, Georgia, serif;
   font-size: 1.5em;
-  margin: 1% 0;
+  margin: 4% 0;
   color: saddlebrown;
 }
 .prod-img {
   height: 100%;
+  margin: 0 auto;
 }
-.edit-links {
+.edit-prod-links {
+  text-align: center;
   margin: 1% 0;
 }
 .new-prod-link {
   padding: 5% 0;
-
+  text-align: center;
 }
