@@ -5,21 +5,9 @@
 </div>
 
 <div class="product-page">
-  <% @products.each do |product| %>
-    <div class="col-md-3 products">
-      <h2 class="product-name"><%= product.name %></h2>
-      <%= image_tag(product.image_url, class: "img-responsive prod-img") %>
-      <p class="product-desc"><%= product.description %></p>
-      <p class="p-margin-center price">Price per dozen $ <%= product.price %></p>
-      <p class="p-margin-center price-color-code">price color code: <%= product.colour %></p>
-      <div class="edit-prod-links">
-        <%= link_to 'Show', product %>
-        <%= link_to 'Edit', edit_product_path(product) %>
-        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-      </div> <!--end edit-prod-links -->
-    </div> <!--end products -->
-  <% end %>
 
+  <%= render @products %>
+  
   <div class="new-prod-link col-md-12">
     <%= link_to 'New Product', new_product_path %>
   </div> <!-- end new-prod-link -->
