@@ -14,13 +14,13 @@ h2 {
 h1 {
   font-family: Papyrus, Georgia, serif;
 }
-h2 {
+h2,
+h3 {
   font-family: Palatino, Georgia, serif;
 }
 h3,
 p {
   text-align: center;
-  font-family: Palatino, Georgia, serif;
   color: #8B4513;
 }
 
@@ -28,15 +28,14 @@ p {
   text-align: center;
 }
 
-.social-media-icons {
-  margin: 0 auto;
-}
-
 .cookie-border {
   margin: auto;
 }
 
-// landing page carousel
+// Landing Page
+.brown-h2 {
+  color: #8B4513;
+}
 .carousel {
   margin-top: 1%;
 }
@@ -46,4 +45,9 @@ p {
 .carousel-indicators {
   left: 20%;
   margin: 50% 0 0 0;
+}
+
+// Contact Page
+.yc-logo {
+  margin: 1% auto;
 }
