@@ -5,9 +5,6 @@
 .products {
   margin-left: 6%;
 }
-.prod-logo {
-
-}
 .product-name {
   font-family: Papyrus, Georgia, serif;
   font-size: 2em;
@@ -18,7 +15,6 @@
   font-size: 1.5em;
   line-height: 1.2em;
   margin: 4% 0;
-  color: saddlebrown;
 }
 .prod-img {
   height: 100%;
@@ -34,4 +30,16 @@
 .new-prod-link {
   padding: 5% 0;
   text-align: center;
+}
+
+.show-price,
+.show-price-color-code {
+  font-size: 1.25em;
+  margin: 1% auto;
+}
+.show-product-desc {
+  font-family: Palatino, Georgia, serif;
+  font-size: 1.75em;
+  line-height: 1.5em;
+  margin: 1% 0;
 }

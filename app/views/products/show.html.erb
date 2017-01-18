@@ -1,29 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="col-md-12">
+  <%= image_tag("yc-logo.png", class: "img-responsive col-md-4 col-md-offset-4") %>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
-
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<!-- Display Product info -->
+<div class="show-product col-md-12">
+  <h2 class="product-name"><%= @product.name %></h2>
+  <%= image_tag(@product.image_url, class: "img-responsive prod-img") %>
+  <p class="show-product-desc"><%= @product.description %></p>
+  <p class="p-margin-center show-price">Price per dozen $ <%= @product.price %></p>
+  <p class="p-margin-center show-price-color-code">price color code: <%= @product.colour %></p>
+  <p class="p-margin-center"> <%= link_to 'Edit', edit_product_path(@product) %> | <%= link_to 'Back', products_path %> </p>
+</div> <!--end products -->
