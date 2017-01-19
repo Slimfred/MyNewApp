@@ -19,7 +19,7 @@
       <% @products.each do |product| %>
       <div class="item <%= "active" if product == @products.first %>">
         <div>
-          <%= image_tag(product.image_url, class: "carousel-img") %>
+          <%= link_to image_tag(product.image_url, class: "carousel-img"), product %>
         </div> <!-- end carousel-img -->
         <div class="carousel-caption">
           <%= product.name %>
