@@ -1,7 +1,7 @@
 <!-- Display Product info -->
 <div class="col-md-3 products">
-  <h2 class="product-name"><%= product.name %></h2>
-  <%= image_tag(product.image_url, class: "img-responsive prod-img") %>
+  <h2 class="product-name"><%= link_to product.name, product %></h2>
+  <%= link_to image_tag(product.image_url, class: "img-responsive prod-img"), product %>
   <p class="product-desc"><%= product.description %></p>
   <p class="p-margin-center price">Price per dozen $ <%= product.price %></p>
   <p class="p-margin-center price-color-code">price color code: <%= product.colour %></p>

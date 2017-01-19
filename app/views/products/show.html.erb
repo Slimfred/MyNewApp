@@ -7,9 +7,13 @@
 <!-- Display Product info -->
 <div class="show-product col-md-12">
   <h2 class="product-name"><%= @product.name %></h2>
-  <%= image_tag(@product.image_url, class: "img-responsive prod-img") %>
-  <p class="show-product-desc"><%= @product.description %></p>
-  <p class="p-margin-center show-price">Price per dozen $ <%= @product.price %></p>
-  <p class="p-margin-center show-price-color-code">price color code: <%= @product.colour %></p>
-  <p class="p-margin-center"> <%= link_to 'Edit', edit_product_path(@product) %> | <%= link_to 'Back', products_path %> </p>
+  <div class="col-md-offset-4 col-md-4">
+    <%= image_tag(@product.image_url, class: "img-responsive show-prod-img") %>
+  </div>
+  <div class="col-md-12">
+    <p class="show-product-desc"><%= @product.description %></p>
+    <p class="p-margin-center show-price">Price per dozen $ <%= @product.price %></p>
+    <p class="p-margin-center show-price-color-code">price color code: <%= @product.colour %></p>
+    <p class="p-margin-center"> <%= link_to 'Edit', edit_product_path(@product) %> | <%= link_to 'Back', products_path %> </p>
+  </div>
 </div> <!--end products -->
