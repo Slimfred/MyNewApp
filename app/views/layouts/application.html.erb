@@ -35,6 +35,13 @@
             <li> <%= link_to "Products", products_url %> </li>
             <li> <%= link_to "Contact", static_pages_contact_path %> </li>
           </ul>
+          <div class="search-box">
+            <%= form_tag("/products", method: "get") do %>
+              <%= label_tag(:q, "Search for:") %>
+              <%= text_field_tag(:q) %>
+              <%= submit_tag("Search") %>
+            <% end %>
+          </div> <!-- end search-box -->
         </div> <!-- end collapse navbar-collapse" -->
       </div> <!-- end container-fluid -->
     </nav>
