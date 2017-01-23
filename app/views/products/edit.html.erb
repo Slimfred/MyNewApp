@@ -1,6 +1,10 @@
-<h1>Editing Product</h1>
+<div class="edit-page col-xs-12 col-sm-12 container-fluid">
+  <h1>Edit Product Info</h1>
 
-<%= render 'form', product: @product %>
+  <%= render 'form', product: @product %>
 
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+  <div class="editpg-show-back col-sm-12">
+    <%= link_to 'Show', @product %> |
+    <%= link_to 'Back', products_path %>
+  </div>
+<div> <!-- end container-fluid -->

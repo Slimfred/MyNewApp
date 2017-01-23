@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="edit-form container-fluid col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
   <%= form_for(product) do |f| %>
     <% if product.errors.any? %>
       <div id="error_explanation">
@@ -12,33 +12,33 @@
       </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+    <div class="field form-group">
+      <%= f.label :name, class: "edit-labels" %>
+      <%= f.text_field :name, class: "form-control" %>
     </div>
 
-    <div class="field">
-      <%= f.label :description %>
-      <%= f.text_area :description %>
+    <div class="field form-group">
+      <%= f.label :description, class: "edit-labels" %>
+      <%= f.text_area :description, class: "form-control" %>
     </div>
 
-    <div class="field">
-      <%= f.label :image_url %>
-      <%= f.text_field :image_url %>
+    <div class="field form-group">
+      <%= f.label :image_url, class: "edit-labels" %>
+      <%= f.text_field :image_url, class: "form-control" %>
     </div>
 
-    <div class="field">
-      <%= f.label :colour %>
-      <%= f.text_field :colour %>
+    <div class="field form-group">
+      <%= f.label :colour, class: "edit-labels" %>
+      <%= f.text_field :colour, class: "form-control" %>
     </div>
 
-    <div class="field">
-      <%= f.label :price %>
-      <%= f.text_field :price %>
+    <div class="field form-group">
+      <%= f.label :price, class: "edit-labels" %>
+      <%= f.text_field :price, class: "form-control" %>
     </div>
 
     <div class="actions">
-      <%= f.submit %>
+      <%= f.submit class: "btn btn-default submit-button" %>
     </div>
   <% end %>
 </div> <!-- end container-fluid -->

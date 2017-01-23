@@ -3,5 +3,8 @@
 <div class="container-fluid">
   <%= render 'form', product: @product %>
 
-  <%= link_to 'Back', products_path %>
+  <div class="editpg-show-back col-sm-12">
+    <%= link_to 'Show', @product %> |
+    <%= link_to 'Back', products_path %>
+  </div>
 </div> <!-- end container-fluid -->

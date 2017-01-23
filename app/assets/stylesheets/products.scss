@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#notice {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+// Products Partial
 .products {
   margin-left: 6%;
 }
@@ -31,11 +37,8 @@
   padding: 5% 0;
   text-align: center;
 }
-#notice {
-  font-size: 1.5em;
-  font-style: italic;
-}
 
+// Show One Procuct Page
 .show-price,
 .show-price-color-code {
   font-size: 1.25em;
@@ -46,4 +49,31 @@
   font-size: 1.75em;
   line-height: 1.5em;
   margin: 1% 0;
+}
+
+// Edit Product Page
+.edit-page {
+  margin-top: 5%;
+}
+.edit-page h1 {
+  margin-bottom: 1%;
+}
+.edit-form {
+  background-color: darkgreen;
+  padding: 1%;
+}
+.edit-labels {
+  color: #f5f5f5;
+  font-style: italic;
+  font-size: 1em;
+}
+.submit-button {
+  background-color: saddlebrown;
+  color: #f5f5f5;
+  margin-top: 1%;
+}
+.editpg-show-back {
+  margin-top: 1%;
+  font-size: 1.25em;
+  text-align: center;
 }
