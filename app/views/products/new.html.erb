@@ -1,9 +1,10 @@
-<h1>New Product</h1>
+<div class="new-product-page container-fluid">
 
-<div class="container-fluid">
+  <h1>New Product</h1>
+
   <%= render 'form', product: @product %>
 
-  <div class="editpg-show-back col-sm-12">
+  <div class="show-back-links col-sm-12">
     <%= link_to 'Show', @product %> |
     <%= link_to 'Back', products_path %>
   </div>
