@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   padding-top: 5%;
+  padding-bottom: 10%;
+  font-family: Palatino, Georgia, serif;
+  font-size: 16px;
 }
 
 h1,
@@ -12,10 +15,6 @@ h2 {
 }
 h1 {
   font-family: Papyrus, Georgia, serif;
-}
-h2,
-h3 {
-  font-family: Palatino, Georgia, serif;
 }
 h3,
 p {
@@ -53,7 +52,7 @@ p {
   margin: 50% 0 0 0;
 }
 
-// Contact Page
-.yc-logo {
-  margin: 1% auto;
+// Thank you Page
+.thank-you-message {
+  margin-top: 10%;
 }

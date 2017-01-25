@@ -1,17 +1,36 @@
 <div class="container-fluid contact-page">
   <div class="col-md-12 yc-logo">
-    <%= image_tag("yc-logo.png", class: "yc-logo-lg img-responsive col-md-4 col-md-offset-4") %>
+    <%= image_tag("yc-logo.png", class: "yc-logo img-responsive col-md-4 col-md-offset-4") %>
   </div>
 
   <h1> Yummy Cookies! is a web app to demonstrate my proficiency with Ruby on Rails.</h1>
 
   <h2 class="brown-h2"> For more information about me and other projects I have done please <a href="http://tracylynhall.bitballoon.com/" target="_blank"> visit my website! </a> </h2>
 
-  <div class="contact-form">
-    <h2> To contact me about building a website for you send me a <a href="https://form.jotform.com/70086699021156" target="_blank"> message here! </a> </h2>
-    <!-- <div class="col-md-6 col-md-offset-3">
-      <script type="text/javascript" src="https://form.jotform.com/jsform/70086699021156"></script>
-    </div> -->
+  <h2> To contact me about building a website for you send me a message below: </h2>
+
+  <div class="contact-form col-sm-6 col-sm-offset-3">
+
+    <%= flash[:notice] %>
+
+    <%= form_tag("/static_pages/thank_you") do %>
+        <div class="form-group">
+          <%= label_tag :name, "Name", class: "contact-labels" %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Please Enter Your Name" %>
+        </div> <!-- end form-group -->
+
+        <div class="form-group">
+          <%= label_tag :email, "Email Address", class: "contact-labels" %>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "Please Enter Your Email" %>
+        </div> <!-- end form-group -->
+
+        <div class="form-group">
+          <%= label_tag :message, "Message", class: "contact-labels" %>
+          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Please Enter Your Message" %>
+        </div> <!-- end form-group -->
+      <%= submit_tag "Send", class: "btn btn-default submit-button" %>
+    <% end %>
+
   </div> <!-- end contact form -->
 
 </div> <!-- end container-fluid -->

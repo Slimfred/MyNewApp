@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #notice {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-style: italic;
 }
 
@@ -13,12 +13,12 @@
 }
 .product-name {
   font-family: Papyrus, Georgia, serif;
-  font-size: 2em;
+  font-size: 1.75em;
   color: saddlebrown;
 }
 .product-desc {
   font-family: Palatino, Georgia, serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1.2em;
   margin: 4% 0;
 }
@@ -41,19 +41,19 @@
 // Show One Procuct Page
 .show-price,
 .show-price-color-code {
-  font-size: 1.25em;
+  // font-size: 1.25em;
   margin: 1% auto;
 }
 .show-product-desc {
   font-family: Palatino, Georgia, serif;
-  font-size: 1.75em;
-  line-height: 1.5em;
+  font-size: 1.5em;
+  line-height: 1.3em;
   margin: 1% 0;
 }
 
 .show-back-links {
   margin-top: 1%;
-  font-size: 1.25em;
+  // font-size: 1.25em;
   text-align: center;
 }
 
@@ -64,22 +64,10 @@
 .edit-page h1 {
   margin-bottom: 1%;
 }
-.edit-form {
-  background-color: darkgreen;
-  padding: 1%;
-}
-.edit-labels {
-  color: #f5f5f5;
-  font-style: italic;
-  font-size: 1em;
-}
-.submit-button {
-  background-color: saddlebrown;
-  color: #f5f5f5;
-  margin-top: 1%;
-}
 
 // New Product Page
 .new-product-page {
   margin-top: 5%;
 }
+
+// Form Formatting is in the forms.scss file
