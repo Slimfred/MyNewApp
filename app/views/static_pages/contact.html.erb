@@ -16,17 +16,17 @@
     <%= form_tag("/static_pages/thank_you") do %>
         <div class="form-group">
           <%= label_tag :name, "Name", class: "contact-labels" %>
-          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Please Enter Your Name" %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Please Enter Your Name", required: "required" %>
         </div> <!-- end form-group -->
 
         <div class="form-group">
           <%= label_tag :email, "Email Address", class: "contact-labels" %>
-          <%= text_field_tag :email, nil, class: "form-control", placeholder: "Please Enter Your Email" %>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "Please Enter Your Email", required: "required" %>
         </div> <!-- end form-group -->
 
         <div class="form-group">
           <%= label_tag :message, "Message", class: "contact-labels" %>
-          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Please Enter Your Message" %>
+          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Please Enter Your Message", required: "required" %>
         </div> <!-- end form-group -->
       <%= submit_tag "Send", class: "btn btn-default submit-button" %>
     <% end %>
