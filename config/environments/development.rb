@@ -31,6 +31,9 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # added in Task 5.4 so dynamic links generate the right URLs
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
