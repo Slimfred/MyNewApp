@@ -1,19 +1,27 @@
-.edit-form, .contact-form {
+.edit-form, .contact-form, .user-form {
   background-color: darkgreen;
   padding: 1%;
 }
-.edit-labels, .contact-labels {
+.edit-labels, .contact-labels, .user-labels {
   color: #f5f5f5;
   font-style: italic;
-  // font-size: 1.25em;
 }
-.submit-button {
+.submit-button,
+.cancel-button,
+.back-button {
   border-color: black;
   background-color: saddlebrown;
   color: #f5f5f5;
   margin-top: 1%;
 }
-
+.button-to {
+  padding-left: 5%;
+}
+.shared-links {
+  margin-top: 1%;
+  padding-bottom: 4%;
+  text-align: center;
+}
 .contact-form {
   margin-top: 2%;
 }

@@ -2,10 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#notice {
-  font-size: 1.3em;
-  font-style: italic;
-}
+// Form Formatting is in the forms.scss file
 
 // Products Partial
 .products {
@@ -50,7 +47,6 @@
   line-height: 1.3em;
   margin: 1% 0;
 }
-
 .show-back-links {
   margin-top: 1%;
   // font-size: 1.25em;
