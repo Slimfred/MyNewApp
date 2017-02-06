@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'thor', '0.19.1'
 
+gem 'cancancan'
+
 gem 'devise'
 
 # Use Capistrano for deployment
