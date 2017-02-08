@@ -20,7 +20,7 @@
           <td class="column-data col-sm-2"><%= user.last_name %></td>
           <td class="column-data col-sm-2"><%= user.email %></td>
           <td class="col-sm-1 table-links"><%= link_to 'Show', user %></td>
-          <td class="col-sm-1 table-links"><%= link_to 'Edit', edit_user_path(user) %></td>
+          <td class="col-sm-1 table-links"><%= link_to 'Edit', edit_user_registration_path(user) %></td>
           <td class="col-sm-1 table-links"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
@@ -28,5 +28,5 @@
   </table>
 
   <br>
-  <%= link_to 'New User', new_user_path, class: "btn btn-default new-user-button"%>
+  <%= link_to 'New User', new_user_registration_path, class: "btn btn-default new-user-button"%>
 </div> <!-- end user-table -->
