@@ -12,8 +12,10 @@
   </div>
   <div class="col-md-12">
     <p class="show-product-desc"><%= @product.description %></p>
-    <p class="p-margin-center show-price">Price per dozen $ <%= @product.price %></p>
-    <p class="p-margin-center show-price-color-code">price color code: <%= @product.colour %></p>
+    <p class="p-margin-center show-price">Price per dozen $ <%= @product.price %> </p>
+    <!-- <p class="p-margin-center show-price-color-code"> price color code: <%= @product.colour %> </p> -->
+    <h4 class="show-rating"> Product Rating goes here </h4>
+    <h4 class="show-product-comment"> Best Comment: <%= @product.highest_rating_comment %> Worst Comment: <%= @product.lowest_rating_comment %> </h4>
     <p class="p-margin-center"> <%= link_to 'All Products', products_path %> | <%= link_to 'Edit', edit_product_path(@product) %> </p>
   </div>
-</div> <!--end products -->
+</div> <!--end show-product -->
