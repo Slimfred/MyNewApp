@@ -1,0 +1,21 @@
+<% if signed_in? %>
+  <div class="comment-new container-fluid col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+    <h4> Have a comment about these cookies? </h4>
+    <%= form_for([@product, @product.comments.build]) do |f| %>
+      <div class="field form-group">
+        <%= f.label :body, "Comments:", class: "comment-labels" %>
+        <%= f.text_area :body, class: "form-control" %>
+      </div>
+      <div>
+        <div class="rating"></div>
+      </div>
+      <!-- <div>
+        <%= f.label :rating %>
+        <%= f.text_field :rating, class: "rating" %>
+      </div> -->
+      <div>
+        <%= f.submit class: "btn btn-default comment-submit-button" %>
+      </div>
+    <% end %>
+  </div> <!-- end comment-new -->
+<% end %>

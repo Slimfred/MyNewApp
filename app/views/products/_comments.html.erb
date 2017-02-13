@@ -1,0 +1,11 @@
+<div class="product-comments container-fluid col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+  <% @comments.each do |comment| %>
+    <div class="row">
+      <hr>
+      <h4> <%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %> </em></small></h4>
+      <div class="rated" data-score="<%= comment.rating %>"></div>
+      <!-- <h4> <%="rating: #{comment.rating}/5" %> </h4> -->
+      <h4> <%= comment.body %> </h4>
+    </div> <!-- end row -->
+  <% end %>
+</div> <!-- end product-comments -->
