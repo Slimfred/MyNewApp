@@ -29,6 +29,13 @@ class Ability
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
     user ||= User.new # guest user (not logged in)
-      can :manage, User, id: user.id
+      if user.admin?
+        can :manage, :all
+      else
+        can :manage, User, id: user.id
+        can [:create, :read], Comment
+        can :read, Product
+      end
   end
+
 end
