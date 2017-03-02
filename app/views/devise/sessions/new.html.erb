@@ -1,32 +1,35 @@
-<h2>Log in</h2>
+<div class="conatiner-fluid">
+  <h2>Log in</h2>
 
-<div class="user-form container-fluid col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1">
+  <div class="user-form col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1">
 
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="field">
-      <%= f.label :email, class: "user-labels" %>
-      <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Please enter your email" %>
-    </div>
-
-    <div class="field">
-      <%= f.label :password, class: "user-labels" %>
-      <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Please enter your password" %>
-    </div>
-
-    <% if devise_mapping.rememberable? -%>
-      <div class="field check-box">
-        <%= f.check_box :remember_me %>
-        <%= f.label :remember_me, class: "user-labels" %>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.label :email, class: "user-labels" %>
+        <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Please enter your email" %>
       </div>
-    <% end -%>
 
-    <div class="actions">
-      <%= f.submit "Log in", class: "btn btn-default submit-button" %>
-    </div>
-  <% end %>
+      <div class="field">
+        <%= f.label :password, class: "user-labels" %>
+        <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Please enter your password" %>
+      </div>
 
-</div> <!-- end user-form -->
+      <% if devise_mapping.rememberable? -%>
+        <div class="field check-box">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me, class: "user-labels" %>
+        </div>
+      <% end -%>
 
-<div class="shared-links col-sm-12">
-  <%= render "devise/shared/links" %>
-</div> <!-- end back-button-div -->
+      <div class="actions">
+        <%= f.submit "Log in", class: "btn btn-default submit-button" %>
+      </div>
+    <% end %>
+
+  </div> <!-- end user-form -->
+
+  <div class="shared-links col-sm-12">
+    <%= render "devise/shared/links" %>
+  </div> <!-- end back-button-div -->
+
+</div>
