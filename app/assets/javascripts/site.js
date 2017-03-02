@@ -10,4 +10,9 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
+
+  $('#notice').delay(2000).fadeOut(1500);
+
+  $('.alert').delay(2000).fadeOut(1500);
+
 });
