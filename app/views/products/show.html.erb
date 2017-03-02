@@ -14,9 +14,9 @@
       <p class="p-margin-center show-price">Price per dozen $ <%= @product.price %> </p>
       <h4>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></h4>
       <!-- <p class="p-margin-center show-price-color-code"> price color code: <%= @product.colour %> </p> -->
-      <!-- <div class="col-sm-12">
-        <h4 class="show-product-comment"> Best Comment: <%= @product.highest_rating_comment %> Worst Comment: <%= @product.lowest_rating_comment %> </h4>
-      </div> -->
+      <div class="col-sm-12">
+        <h4 class="show-product-comment"> Best Comment: <%= @product.highest_rating_comment.body %> ~ Worst Comment: <%= @product.lowest_rating_comment.body %> </h4>
+      </div>
       <%= render partial: "new_comment" %>
       <%= render partial: "comments" %>
       <div class="page-numbers col-sm-12">
