@@ -5,6 +5,12 @@
 
   <div class="product-page">
 
+    <div class="search-results">
+      <% if params[:q] %>
+        <h3> Your search returned <%= @products.size %> result(s).</h3>
+      <% end %>
+    </div>
+
     <%= render @products %>
 
     <div class="new-prod-link col-md-12">

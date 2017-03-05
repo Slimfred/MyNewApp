@@ -46,7 +46,7 @@
           <div class="search-box">
             <%= form_tag("/products", method: "get") do %>
               <%= label_tag(:q, "Search Our Cookies:", class: "search-label") %>
-              <%= text_field_tag(:q) %>
+              <%= text_field_tag(:q, params[:q]) %>
               <%= submit_tag("Search", class: "btn btn-default search-button") %>
             <% end %>
           </div> <!-- end search-box -->
@@ -57,7 +57,7 @@
     <% if notice %>
       <p id="notice"><%= notice %></p>
     <% end %>
-    
+
     <% if alert %>
       <h3 class="alert alert-danger" role="alert"> <%= alert %> </h3>
     <% end %>
