@@ -21,4 +21,6 @@ class PaymentsController < ApplicationController
     end
 
     redirect_to payments_create_path
+
+  end
 end
