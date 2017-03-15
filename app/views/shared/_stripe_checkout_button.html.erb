@@ -6,3 +6,4 @@
   data-description="1 dozen <%= @product.name %>"
   data-amount="<%= @product.price_in_cents %>">
 </script>
+<%= hidden_field_tag :product_id, @product.id %>
