@@ -14,10 +14,11 @@ class UserMailer < ApplicationMailer
           :subject => "Welcome to #{@appname}!")
   end
 
-  # def order_recieved(
+  # def order_recieved(user)
   #   @user = current_user
   #   @appname = "Yummy Cookies!"
   #   mail( :to => user.email,
+  #         :from => sales@yummycookies.com
   #         :subject => "Your order with #{@appname}")
   #   )
 end

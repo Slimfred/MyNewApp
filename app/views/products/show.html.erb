@@ -15,8 +15,12 @@
       <p class="p-margin-center show-price">Price per dozen <%= number_to_currency(@product.price_in_cents * 0.01)%> </p>
 
       <div class="pay-button col-sm-12">
-        <%= form_tag "/payments/create" do %>
-          <%= render partial: "shared/stripe_checkout_button" %>
+        <% if user_signed_in? %>
+          <%= form_tag "/payments/create" do %>
+            <%= render partial: "shared/stripe_checkout_button" %>
+            <!-- hidden field allows access to product_id in payments controller -->
+            <%= hidden_field_tag :product_id, @product.id %>
+          <% end %>
         <% end %>
       </div> <!-- end pay-button -->
 
