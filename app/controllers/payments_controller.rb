@@ -1,5 +1,6 @@
 class PaymentsController < ApplicationController
-
+  before_action :authenticate_user!
+  load_and_authorize_resource
 
   def create
     token = params[:stripeToken]
@@ -23,13 +24,19 @@ class PaymentsController < ApplicationController
           user_id: @user.id,
           total: @product.price_in_cents
         )
+
+        # UserMailer.order_recieved(@user).deliver_now
+
       end
 
     rescue Stripe::CardError => e
       # the card has been declined
+      body = e.json_body
+      err = body[:error]
+      flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
     end
 
-    redirect_to payments_create_path
+    redirect_to product_path(@product)
 
   end
 end
