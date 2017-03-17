@@ -1,1 +1,29 @@
-<h3> This is the orders index page. </h3>
+<div class="container-fluid">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Orders</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Order Id</th>
+        <th>User Id</th>
+        <th>Product Id</th>
+        <th>Total</th>
+        <th colspan="4"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @orders.each do |order| %>
+        <tr>
+          <td><%= order.id %></td>
+          <td><%= order.user_id %></td>
+          <td><%= order.product_id %></td>
+          <td><%= order.total %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
