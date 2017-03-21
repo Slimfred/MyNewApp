@@ -35,6 +35,7 @@ class Ability
         can :manage, User, id: user.id
         can [:create, :read], Comment
         can :read, Product
+        can [:create, :read], Order, id: user.id
       end
   end
 
