@@ -1,4 +1,5 @@
 <!-- Display Product info -->
+<% logger.debug "Product Id: #{product.id}" %>
 <div class="col-md-3 products">
   <h2 class="product-name"><%= link_to product.name, product %></h2>
   <%= link_to image_tag(product.image_url, class: "img-responsive prod-img"), product %>

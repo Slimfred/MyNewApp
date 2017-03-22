@@ -14,6 +14,7 @@
 
       <tbody>
         <% @users.each do |user| %>
+        <% logger.debug "Users: #{user.id}" %>
           <tr>
             <td class="column-data col-sm-2"><%= user.first_name %></td>
             <td class="column-data col-sm-2"><%= user.last_name %></td>
