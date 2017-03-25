@@ -2,7 +2,7 @@ $(document).on('turbolinks:load', function(){
     $('.rating').raty({path: '/assets'});
 });
 
-$(document).on('turbolinks:load', function(){
+var refreshRating = function() {
   $('.rating').raty({path: '/assets', scoreName: 'comment[rating]'});
   $('.rated').raty({path: '/assets',
     readOnly: true,
@@ -10,8 +10,11 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
+};
 
-$(document).on('turbolinks:load', function(){
+$(document).on('turbolinks:load ajaxSuccess', function(){
+  refreshRating();
+
   $('.img-zoom').elevateZoom({
     zoomType : "lens",
     lensShape : "round",
@@ -23,5 +26,3 @@ $(document).on('turbolinks:load', function(){
   $('#notice').delay(2000).fadeOut(1500);
 
   $('.alert').delay(2000).fadeOut(1500);
-
-});

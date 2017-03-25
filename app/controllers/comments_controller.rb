@@ -11,6 +11,7 @@ class CommentsController < ApplicationController
       if @comment.save
         format.html {redirect_to @product, notice: 'Comment was created successfully'}
         format.json {render :show, status: :created, location: @product}
+        format.js
       elsif @comment.honeypot.length > 0
         format.html {redirect_to @product}
         format.json {render json: @comment.errors, status: :unprocessable_entity}

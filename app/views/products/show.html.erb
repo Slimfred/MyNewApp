@@ -24,7 +24,7 @@
         <% end %>
       </div> <!-- end pay-button -->
 
-      <h4>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></h4>
+      <h4>Average Rating: <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div></h4>
       <!-- <p class="p-margin-center show-price-color-code"> price color code: <%= @product.colour %> </p> -->
       <div class="col-sm-12">
         <% if @comments.size >= 2 %>
