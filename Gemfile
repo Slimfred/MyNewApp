@@ -34,11 +34,15 @@ gem 'devise'
 
 gem 'will_paginate', '~> 3.1.0'
 
+# Accept Credit Card Payments
 gem 'stripe'
+
 
 gem 'brakeman'
 
 gem 'dalli'
+
+gem 'redis-rails', '~> 5.0', '>= 5.0.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
