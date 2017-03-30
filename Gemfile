@@ -44,6 +44,8 @@ gem 'dalli'
 
 gem 'redis-rails', '~> 5.0', '>= 5.0.1'
 
+gem 'newrelic_rpm'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
