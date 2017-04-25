@@ -4,12 +4,12 @@ class CommentsController < ApplicationController
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
+    @user = current_user
     # @honeypot = Comment.find(params[:honeypot])
 
     # byebug
     respond_to do |format|
       if @comment.save
-        ProductChannel.broadcast_to @product.id, comment: @comment, average_rating: @product.average_rating
         format.html {redirect_to @product, notice: 'Comment was created successfully'}
         format.json {render :show, status: :created, location: @product}
         format.js
