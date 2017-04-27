@@ -7,6 +7,6 @@ FactoryGirl.define do
     description
     image_url "sport-green-bike.jpg"
     colour "red"
-    price "15.95"
+    price_in_cents "1595"
   end
 end
