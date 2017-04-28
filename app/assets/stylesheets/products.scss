@@ -27,7 +27,6 @@
   margin: 0 auto;
 }
 .edit-prod-links {
-  text-align: center;
   margin: 1% 0;
 }
 .new-prod-link {
@@ -38,6 +37,9 @@
 // Show One Procuct Page
 .show-product {
   padding-bottom: 5%;
+}
+.show-name-edit {
+  display: inline-block;
 }
 .show-price,
 .show-price-color-code {

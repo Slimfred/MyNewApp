@@ -10,11 +10,5 @@
     <p class="product-desc"><%= product.description %></p>
     <p class="p-margin-center price">Price per dozen <%= number_to_currency(product.price_in_cents * 0.01) %></p>
     <p class="p-margin-center price-color-code">price color code: <%= product.colour %></p>
-    <div class="edit-prod-links">
-      <% if can? :update, @product %>
-        <%= link_to 'Edit', edit_product_path(product), :class => "btn btn-warning btn-sm" %>
-        <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-warning btn-sm" %>
-      <% end %>
-    </div> <!--end edit-prod-links -->
   </div> <!--end products -->
 <% end %>
