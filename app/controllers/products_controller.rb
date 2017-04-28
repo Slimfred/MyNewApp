@@ -21,7 +21,6 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
-
     @product.viewed!  #increments views each time it is loaded
   end
 

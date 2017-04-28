@@ -1,12 +1,14 @@
   <!-- Display Product info -->
 <% logger.debug "Product Id: #{product.id}" %>
+<% logger.debug "Price: #{product.price_in_cents}" %>
+
 
 <% cache product do %>
   <div class="col-md-3 products">
     <h2 class="product-name"><%= link_to product.name, product %></h2>
     <%= link_to image_tag(product.image_url, class: "img-responsive prod-img"), product %>
     <p class="product-desc"><%= product.description %></p>
-    <p class="p-margin-center price">Price per dozen $ <%= product.price_in_cents %></p>
+    <p class="p-margin-center price">Price per dozen <%= number_to_currency(product.price_in_cents * 0.01) %></p>
     <p class="p-margin-center price-color-code">price color code: <%= product.colour %></p>
     <div class="edit-prod-links">
       <% if can? :update, @product %>
